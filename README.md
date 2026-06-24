@@ -335,3 +335,15 @@ Location: Kisumu, Kenya - Remote-first - UTC+3
 > Every model I ship is interpretable, tested, and honestly
 > reported including the error rate. Every system I deployed
 > started on a 6-inch screen with 4G data.
+
+---
+
+## Live Demo
+
+| | URL |
+|--|-----|
+| Live App | https://kmeans-customer-segmentation.vercel.app |
+| API | https://kmeans-customer-segmentation.onrender.com |
+| API Docs | https://kmeans-customer-segmentation.onrender.com/docs |
+
+Built with FastAPI + React. Deployed on Render + Vercel.
