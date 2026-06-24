@@ -287,3 +287,36 @@ Portfolio: https://nyando-flood-api.onrender.com/docs
 LinkedIn: https://linkedin.com/in/jameskoero
 GitHub: https://github.com/jameskoero
 Email: jmskoero@gmail.com
+
+---
+
+## Other Projects by the Author
+
+This project is part of a broader portfolio of applied ML systems
+built entirely on Android from Kisumu, Kenya.
+
+| Project | Description | Stack | Live |
+|---------|-------------|-------|------|
+| [Nyando Flood AI](https://github.com/jameskoero/nyando-flood-ai) | Flood risk prediction for 50,000 Kano Plains residents · AUC 0.9717 · F1 0.9022 · 2,308 Google Earth Engine satellite points · 41 CI tests · Zenodo DOI | GradientBoosting · FastAPI · Docker · GEE | [Live API](https://nyando-flood-api.onrender.com/docs) |
+| [AfriSalaries](https://github.com/jameskoero/afrisalaries) | Salary band classifier across 8 African countries · XGBoost · E2E 88% accuracy · HIGH precision 0.72 · 1,526 real rows | XGBoost · FastAPI · Docker · React 18 · Vercel | [Live](https://afrisalaries.vercel.app) |
+| [ChurchOS](https://github.com/jameskoero/ChurchOS) | Africa-first multi-tenant church SaaS · M-Pesa and Flutterwave · JWT auth · 5-role RBAC · Finance audit log · 15-test pytest suite | Flask 3.0 · React 18 · PostgreSQL · Render · Vercel | [Live](https://churchos-app.vercel.app) |
+| [Titanic Survival](https://github.com/jameskoero/titanic-survival-prediction) | Leak-free Pipeline · SHAP waterfalls · StratifiedKFold · Bootstrap CIs · 12 automated tests · Zenodo DOI · Accuracy 81.01% · ROC-AUC 0.8661 | scikit-learn · SHAP · Streamlit | [Live](https://titanic-koero.streamlit.app) |
+| [Loan Risk Assessment](https://github.com/jameskoero/loan-risk-assessment) | Basel III framing · Gini 0.74 · IFRS 9 staging · EL = PD x LGD x EAD · Threshold optimisation saves 23% cost | scikit-learn · pandas · FastAPI | - |
+
+---
+
+## Connect
+
+Portfolio: [nyando-flood-api.onrender.com/docs](https://nyando-flood-api.onrender.com/docs)
+LinkedIn: [linkedin.com/in/jameskoero](https://linkedin.com/in/jameskoero)
+GitHub: [github.com/jameskoero](https://github.com/jameskoero)
+Email: jmskoero@gmail.com
+Location: Kisumu, Kenya · Remote-first · UTC+3
+
+> Every model I ship is interpretable, tested, and honestly reported
+> including the error rate. Every system I deployed started on a
+> 6-inch screen with 4G data.
+
+Open to remote ML Engineering · AI Engineering · Data Science roles globally.
+Open to research collaborations and grant-funded projects in
+climate, fintech, and public health.
