@@ -28,7 +28,9 @@
 
 
 **Author:** James Koero - ML Engineer - Kisumu, Kenya
+
 **Built on:** Android (Google Colab) - June 2026
+
 **Dataset:** Mall Customers - Kaggle - 200 rows
 
 ---
@@ -150,49 +152,70 @@ additional clusters produce diminishing inertia reduction.
 ## Business Insights and Strategy
 
 ### Cluster 0 - Careful Spenders
-**Profile:** High income (88k$), very low spending score (17)
-**Insight:** Highest revenue opportunity in the dataset.
+
+Profile: High income (88k$), very low spending score (17)
+
+Insight: Highest revenue opportunity in the dataset.
 These customers have purchasing power but are not converting.
-**Strategy:** Premium loyalty cards, exclusive early access,
+
+Strategy: Premium loyalty cards, exclusive early access,
 personalised high-value product recommendations.
-**Kenya angle:** Nairobi upper-middle class - target via M-Pesa loyalty cashback.
+
+Kenya angle: Nairobi upper-middle class - target via M-Pesa loyalty cashback.
 
 ### Cluster 1 - High Value Champions
-**Profile:** High income (86k$), high spending score (82)
-**Insight:** VIP segment. Already spending at capacity.
+
+Profile: High income (86k$), high spending score (82)
+
+Insight: VIP segment. Already spending at capacity.
 Losing one VIP costs more than losing five average customers.
-**Strategy:** VIP-only events, dedicated relationship managers,
+
+Strategy: VIP-only events, dedicated relationship managers,
 proactive retention before any sign of disengagement.
-**Kenya angle:** Karen/Westlands shoppers - premium in-store experience.
+
+Kenya angle: Karen/Westlands shoppers - premium in-store experience.
 
 ### Cluster 2 - Average Segment
-**Profile:** Mid income (55k$), mid spending (49)
-**Insight:** Largest group - 81 customers (40.5% of base).
-A 10% spending increase here moves revenue more than any other segment.
-**Strategy:** Bundle offers, time-limited promotions,
+
+Profile: Mid income (55k$), mid spending (49)
+
+Insight: Largest group - 81 customers (40.5% of base).
+A 10% spending increase moves revenue more than any other segment.
+
+Strategy: Bundle offers, time-limited promotions,
 loyalty points to nudge behaviour upward.
-**Kenya angle:** Majority urban Kenyans - timed SMS offers via Safaricom.
+
+Kenya angle: Majority urban Kenyans - timed SMS offers via Safaricom.
 
 ### Cluster 3 - Enthusiastic Spenders
-**Profile:** Low income (26k$), high spending score (79)
-**Insight:** Young customers (avg 25) spending beyond income.
+
+Profile: Low income (26k$), high spending score (79)
+
+Insight: Young customers (avg 25) spending beyond income.
 High engagement but financial sustainability risk exists.
-**Strategy:** BNPL options, affordable product lines,
+
+Strategy: BNPL options, affordable product lines,
 budget-friendly bundles that sustain enthusiasm.
-**Kenya angle:** Young Nairobi professionals - M-Pesa Lipa Mdogo Mdogo.
+
+Kenya angle: Young Nairobi professionals - M-Pesa Lipa Mdogo Mdogo.
 
 ### Cluster 4 - Budget Conscious
-**Profile:** Low income (26k$), low spending score (20)
-**Insight:** Price-sensitive but present. They visit but do not convert.
-**Strategy:** Discount days, value packs, loss-leader products
+
+Profile: Low income (26k$), low spending score (20)
+
+Insight: Price-sensitive but present. They visit but do not convert.
+
+Strategy: Discount days, value packs, loss-leader products
 to drive footfall and build purchase habit.
-**Kenya angle:** Price-sensitive shoppers - Naivas/Quickmart-style value deals.
+
+Kenya angle: Price-sensitive shoppers - Naivas/Quickmart-style value deals.
 
 ---
 
 ## Visuals
 
 ### Elbow Curve - Optimal K Selection
+
 
 
 ![Elbow Curve](visuals/elbow_curve.png)
@@ -202,11 +225,13 @@ to drive footfall and build purchase habit.
 ### Customer Segmentation Scatter Plot
 
 
+
 ![Customer Clusters](visuals/customer_clusters.png)
 
 
 
 ### Cluster Radar Profiles
+
 
 
 ![Radar Profiles](visuals/radar_profiles.png)
@@ -216,6 +241,7 @@ to drive footfall and build purchase habit.
 ### Business Insights Bar Chart
 
 
+
 ![Business Insights](visuals/business_insights.png)
 
 
@@ -223,11 +249,13 @@ to drive footfall and build purchase habit.
 ### Segment Distribution
 
 
+
 ![Segment Distribution](visuals/segment_distribution.png)
 
 
 
 ### Revenue Gap Analysis
+
 
 
 ![Revenue Gap](visuals/revenue_gap.png)
@@ -270,14 +298,29 @@ https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-p
 
 ---
 
+## Other Projects by the Author
+
+This project is part of a broader portfolio of applied ML
+systems built entirely on Android from Kisumu, Kenya.
+
+| Project | Description | Stack | Live |
+|---------|-------------|-------|------|
+| [Nyando Flood AI](https://github.com/jameskoero/nyando-flood-ai) | Flood risk prediction for 50,000 Kano Plains residents. AUC 0.9717. F1 0.9022. 2,308 GEE satellite points. 41 CI tests. Zenodo DOI | GradientBoosting, FastAPI, Docker, GEE | [Live](https://nyando-flood-api.onrender.com/docs) |
+| [AfriSalaries](https://github.com/jameskoero/afrisalaries) | Salary band classifier across 8 African countries. XGBoost. E2E 88% accuracy. HIGH precision 0.72. 1,526 real rows | XGBoost, FastAPI, Docker, React 18, Vercel | [Live](https://afrisalaries.vercel.app) |
+| [ChurchOS](https://github.com/jameskoero/ChurchOS) | Africa-first multi-tenant church SaaS. M-Pesa and Flutterwave. JWT auth. 5-role RBAC. Finance audit log. 15-test pytest suite | Flask 3.0, React 18, PostgreSQL, Render, Vercel | [Live](https://churchos-app.vercel.app) |
+| [Titanic Survival](https://github.com/jameskoero/titanic-survival-prediction) | Leak-free Pipeline. SHAP waterfalls. StratifiedKFold. Bootstrap CIs. 12 tests. Zenodo DOI. Accuracy 81.01%. ROC-AUC 0.8661 | scikit-learn, SHAP, Streamlit | [Live](https://titanic-koero.streamlit.app) |
+| [Loan Risk Assessment](https://github.com/jameskoero/loan-risk-assessment) | Basel III framing. Gini 0.74. IFRS 9 staging. EL = PD x LGD x EAD. Threshold optimisation saves 23% cost | scikit-learn, pandas, FastAPI | - |
+
+---
+
 ## About the Author
 
 James Koero is a self-taught ML engineer based in Kisumu,
 Kenya, building applied ML systems for real African problems.
 Background: B.Sc. Physics and Mathematics, Moi University.
 Prior experience in geophysics and reservoir engineering
-at KenGen Olkaria geothermal fields. This project was built
-entirely on an Android phone using Google Colab and mobile data.
+at KenGen Olkaria geothermal fields. Built entirely on
+an Android phone using Google Colab and mobile data.
 
 Open to remote ML Engineering, AI Engineering, and Data Science
 roles globally. Open to research collaborations and grant-funded
@@ -287,36 +330,8 @@ Portfolio: https://nyando-flood-api.onrender.com/docs
 LinkedIn: https://linkedin.com/in/jameskoero
 GitHub: https://github.com/jameskoero
 Email: jmskoero@gmail.com
+Location: Kisumu, Kenya - Remote-first - UTC+3
 
----
-
-## Other Projects by the Author
-
-This project is part of a broader portfolio of applied ML systems
-built entirely on Android from Kisumu, Kenya.
-
-| Project | Description | Stack | Live |
-|---------|-------------|-------|------|
-| [Nyando Flood AI](https://github.com/jameskoero/nyando-flood-ai) | Flood risk prediction for 50,000 Kano Plains residents · AUC 0.9717 · F1 0.9022 · 2,308 Google Earth Engine satellite points · 41 CI tests · Zenodo DOI | GradientBoosting · FastAPI · Docker · GEE | [Live API](https://nyando-flood-api.onrender.com/docs) |
-| [AfriSalaries](https://github.com/jameskoero/afrisalaries) | Salary band classifier across 8 African countries · XGBoost · E2E 88% accuracy · HIGH precision 0.72 · 1,526 real rows | XGBoost · FastAPI · Docker · React 18 · Vercel | [Live](https://afrisalaries.vercel.app) |
-| [ChurchOS](https://github.com/jameskoero/ChurchOS) | Africa-first multi-tenant church SaaS · M-Pesa and Flutterwave · JWT auth · 5-role RBAC · Finance audit log · 15-test pytest suite | Flask 3.0 · React 18 · PostgreSQL · Render · Vercel | [Live](https://churchos-app.vercel.app) |
-| [Titanic Survival](https://github.com/jameskoero/titanic-survival-prediction) | Leak-free Pipeline · SHAP waterfalls · StratifiedKFold · Bootstrap CIs · 12 automated tests · Zenodo DOI · Accuracy 81.01% · ROC-AUC 0.8661 | scikit-learn · SHAP · Streamlit | [Live](https://titanic-koero.streamlit.app) |
-| [Loan Risk Assessment](https://github.com/jameskoero/loan-risk-assessment) | Basel III framing · Gini 0.74 · IFRS 9 staging · EL = PD x LGD x EAD · Threshold optimisation saves 23% cost | scikit-learn · pandas · FastAPI | - |
-
----
-
-## Connect
-
-Portfolio: [nyando-flood-api.onrender.com/docs](https://nyando-flood-api.onrender.com/docs)
-LinkedIn: [linkedin.com/in/jameskoero](https://linkedin.com/in/jameskoero)
-GitHub: [github.com/jameskoero](https://github.com/jameskoero)
-Email: jmskoero@gmail.com
-Location: Kisumu, Kenya · Remote-first · UTC+3
-
-> Every model I ship is interpretable, tested, and honestly reported
-> including the error rate. Every system I deployed started on a
-> 6-inch screen with 4G data.
-
-Open to remote ML Engineering · AI Engineering · Data Science roles globally.
-Open to research collaborations and grant-funded projects in
-climate, fintech, and public health.
+> Every model I ship is interpretable, tested, and honestly
+> reported including the error rate. Every system I deployed
+> started on a 6-inch screen with 4G data.
