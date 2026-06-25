@@ -1,7 +1,8 @@
 import { useState, useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 import Papa from "papaparse";
-import axios from "axios";
+import { useApi } from "./hooks/useApi";
+import WarmUpProvider from "./components/WarmUpProvider";
 import {
   PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend
 } from "recharts";
@@ -229,19 +230,21 @@ function SinglePredict() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
+  const { predict: apiPredict } = useApi();
+
   const predict = async () => {
     setLoading(true);
     setError("");
     setResult(null);
     try {
-      const res = await axios.post(`${API}/predict`, {
+      const data = await apiPredict({
         age: parseFloat(age),
         annual_income: parseFloat(income),
         spending_score: parseFloat(score),
       });
-      setResult(res.data);
+      setResult(data);
     } catch (e) {
-      setError("Prediction failed. Check API connection.");
+      setError("Server is waking up — please try again in 20 seconds.");
     }
     setLoading(false);
   };
@@ -301,6 +304,7 @@ function SinglePredict() {
         </div>
       )}
     </div>
+    </WarmUpProvider>
   );
 }
 
@@ -309,6 +313,8 @@ function CSVPredict() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
+  const { predictBatch } = useApi();
+
   const onDrop = useCallback(async (files) => {
     setLoading(true);
     setError("");
@@ -316,17 +322,17 @@ function CSVPredict() {
     const formData = new FormData();
     formData.append("file", files[0]);
     try {
-      const res = await axios.post(`${API}/predict/csv`, formData);
-      if (res.data.error) {
-        setError(res.data.error);
+      const data = await predictBatch(formData);
+      if (data.error) {
+        setError(data.error);
       } else {
-        setResults(res.data);
+        setResults(data);
       }
     } catch (e) {
-      setError("Upload failed. Check API connection.");
+      setError("Server is waking up — please try again in 20 seconds.");
     }
     setLoading(false);
-  }, []);
+  }, [predictBatch]);
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop, accept: { "text/csv": [".csv"] }, maxFiles: 1
@@ -421,6 +427,7 @@ function CSVPredict() {
         </div>
       )}
     </div>
+    </WarmUpProvider>
   );
 }
 
@@ -428,6 +435,7 @@ export default function App() {
   const [tab, setTab] = useState("single");
 
   return (
+    <WarmUpProvider>
     <div style={styles.app}>
       <header style={styles.header}>
         <div style={styles.logo}>SegmentIQ</div>
@@ -464,5 +472,6 @@ export default function App() {
           style={{ color: "#00B894", marginLeft: 6 }}>GitHub</a>
       </footer>
     </div>
+    </WarmUpProvider>
   );
 }
