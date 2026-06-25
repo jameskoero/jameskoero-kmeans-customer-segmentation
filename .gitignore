@@ -11,7 +11,6 @@ build/
 .eggs/
 
 # Environments
-.env
 .venv
 env/
 venv/
