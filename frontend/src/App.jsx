@@ -7,7 +7,6 @@ import {
   PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend
 } from "recharts";
 
-const API = process.env.REACT_APP_API_URL || "http://localhost:8000";
 
 const COLORS = {
   "Careful Spenders": "#E17055",
@@ -304,7 +303,6 @@ function SinglePredict() {
         </div>
       )}
     </div>
-    </WarmUpProvider>
   );
 }
 
@@ -427,7 +425,6 @@ function CSVPredict() {
         </div>
       )}
     </div>
-    </WarmUpProvider>
   );
 }
 
