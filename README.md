@@ -305,7 +305,7 @@ systems built entirely on Android from Kisumu, Kenya.
 
 | Project | Description | Stack | Live |
 |---------|-------------|-------|------|
-| [Nyando Flood AI](https://github.com/jameskoero/nyando-flood-ai) | Flood risk prediction for 50,000 Kano Plains residents. AUC 0.9717. F1 0.9022. 2,308 GEE satellite points. 41 CI tests. Zenodo DOI | GradientBoosting, FastAPI, Docker, GEE | [Live](https://nyando-flood-api.onrender.com/docs) |
+| [Nyando Flood AI](https://github.com/jameskoero/nyando-flood-ai) | Flood risk prediction for 161,000+ Nyando sub-county residents. AUC 0.9717. F1 0.9022. 2,308 GEE satellite points. 41 CI tests. Zenodo DOI | GradientBoosting, FastAPI, Docker, GEE | [Live](https://nyando-flood-api.onrender.com/docs) |
 | [AfriSalaries](https://github.com/jameskoero/afrisalaries) | Salary band classifier across 8 African countries. XGBoost. E2E 88% accuracy. HIGH precision 0.72. 1,526 real rows | XGBoost, FastAPI, Docker, React 18, Vercel | [Live](https://afrisalaries.vercel.app) |
 | [ChurchOS](https://github.com/jameskoero/ChurchOS) | Africa-first multi-tenant church SaaS. M-Pesa and Flutterwave. JWT auth. 5-role RBAC. Finance audit log. 15-test pytest suite | Flask 3.0, React 18, PostgreSQL, Render, Vercel | [Live](https://churchos-app.vercel.app) |
 | [Titanic Survival](https://github.com/jameskoero/titanic-survival-prediction) | Leak-free Pipeline. SHAP waterfalls. StratifiedKFold. Bootstrap CIs. 12 tests. Zenodo DOI. Accuracy 81.01%. ROC-AUC 0.8661 | scikit-learn, SHAP, Streamlit | [Live](https://titanic-koero.streamlit.app) |
